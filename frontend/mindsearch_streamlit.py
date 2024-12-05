@@ -77,7 +77,7 @@ def update_chat(query):
         # 暂不支持多轮
         # message = [dict(role='user', content=query)]
 
-        url = "http://localhost:8002/solve"
+        url = "http://localhost:8501/solve"
         headers = {"Content-Type": "application/json"}
         data = {"inputs": query}
         raw_response = requests.post(
