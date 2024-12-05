@@ -51,7 +51,8 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8080,
+   HOST="127.0.0.1" ,
+   PORT=8002,
     proxy: {
       "/solve": {
         target: "",
